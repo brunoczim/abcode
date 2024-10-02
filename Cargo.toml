@@ -1,0 +1,15 @@
+[package]
+name = "abcode"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.40.0", features = ["io-util", "net", "rt", "sync"] }
+smallvec = { version = "1.13.2", features = ["union"] }
+serde = { version = "1.0.210" }
+thiserror = { version = "1.0.63" }
+
+[dev-dependencies]
+serde = { version = "1.0.210", features = ["derive"] }
+tokio = { version = "1.40.0", features = ["macros"] }
+anyhow = { version = "1.0.89" }
